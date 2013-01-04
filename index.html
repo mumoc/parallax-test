@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<script>document.documentElement.className = 'js';</script>
+
+	<link rel="stylesheet" href="css/jquery.parallax.css" />
+
+  <style type="text/css" media="screen, projection">
+    .parallax-viewport {
+      width: 1000px;
+      height: 773px;
+      position:relative;
+      overflow:hidden;
+      background-image: url('images/general.png');
+    }
+    .parallaz-layer {
+      position: absolute;
+    }
+	</style>
+
+</head>
+
+<body>
+	<div class="site_wrap wrap">
+    <div class="parallax-viewport" id="parallax">º
+        <div class="parallax-layer">
+            <img src="images/capa1.png" />
+        </div>
+        <div class="parallax-layer">
+            <img src="images/capa2.png"/>
+        </div>
+        <div class="parallax-layer">
+            <img src="images/capa3.png"/>
+        </div>
+      </div>
+     </div>
+
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+  <script src="js/jquery.event.frame.js"></script>
+  <script src="js/jquery.parallax.js"></script>
+  <script>
+  jQuery(document).ready(function(){
+    jQuery('#parallax .parallax-layer')
+    .parallax({
+    },
+    {
+      xparallax: '100px',
+      yparallax: '100px'
+    },
+    {
+      xparallax: '200px',
+      yparallax: '100px'
+    },
+    {
+      xparallax: '300px',
+      yparallax: '100px'
+    });
+  });
+  </script>
+</body>
+</html>
